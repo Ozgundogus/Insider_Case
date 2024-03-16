@@ -41,6 +41,9 @@ public class StarsViewModel {
                         brightness: brightnessOptions.randomElement()!)
         stars.append(star)
         delegate?.didUpdateStarCount(to: stars.count)
+        print("Adding star of size: \(size)")
+        print("Star added. Total count: \(stars.count)")
+        print("Delegate didUpdateStarCount called with count: \(stars.count)")
     }
     
     public func resetStars() {
